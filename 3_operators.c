@@ -65,7 +65,7 @@ int main()
 
 
 C Programming Operators
-In this tutorial, you will learn about different operators in C programming with the help of examples.
+
 
 An operator is a symbol that operates on a value or a variable. For example: + is an operator to perform addition.
 
