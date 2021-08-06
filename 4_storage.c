@@ -1,3 +1,5 @@
+4) Program to explain all storage classes scope.
+
 C Storage Class
 
 There are 4 types of storage class:
