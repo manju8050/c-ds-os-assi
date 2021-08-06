@@ -1,3 +1,5 @@
+6)Create a circular LL with 5 nodes having char data - vowels - a,e,i,o,u
+
 #include<stdio.h>
 #include<stdlib.h>
 
