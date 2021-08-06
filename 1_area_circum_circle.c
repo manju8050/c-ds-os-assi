@@ -16,6 +16,7 @@ int main()
 
 
 /*
+OUTPUT
 
 enter the radius:8
 the area of thr circle is 200.960007
@@ -41,6 +42,7 @@ int main()
 }
 
 /*
+OUTPUT
 enter the radius:8
 the area of thr circle is 200.96
 the circumference of a circle is 50.240002
