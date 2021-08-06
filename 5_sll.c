@@ -1,3 +1,5 @@
+5)Create a list with 3 nodes having int data in single Linked list data : 100,200,300
+
 #include<stdio.h>
 #include<stdlib.h>
 
