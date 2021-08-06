@@ -8,81 +8,82 @@ static
 register
 
 
-Local Variable
+The auto Storage Class
 
-Local Variable
-The variables declared inside a block are automatic or local variables. The local variables exist only inside the block in which it is declared.
+The auto storage class is the default storage class for all local variables.
+It is access with a block or function.
 
-Let's take an example.
-
-#include <stdio.h>
-
-int main(void) 
+ex:-
 {
-  
-  for (int i = 0; i < 5; ++i) 
-  {
-     printf("C programming");
-  }
-  
- // Error: i is not declared at this point
-  printf("%d", i);  
-  return 0;
+   int mount;
+   auto int month;
 }
-
-
-
-Global Variable
-
-Variables that are declared outside of all functions are known as external or global variables. They are accessible from any function inside the program.
-
-Example 1: Global Variable
-#include <stdio.h>
-void display();
-
-int n = 5;  // global variable
-
-int main()
-{
-    ++n;     
-    display();
-    return 0;
-}
-
-void display()
-{
-    ++n;   
-    printf("n = %d", n);
-}
-Output
-
-n = 7
 
 
 
 Register Variable
 The register keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+  Int main()
+{
+	Register int num = 20;
+	Printf(“%d\n”,num);
+	Printf(“%p\n”,&num);       // error address of register variable not able to print)
+	Return 0;
+}
+The register should only be used for variables that require quick access such as counters.
+
 
 
 
 Static Variable
+
+The static storage class instructs the compiler to keep a local variable in existence during 
+the life-time of the program instead of creating and destroying it each time it comes into and goes out of scope.
+
 A static variable is declared by using the static keyword. For example;
 
-Static Variable
-#include <stdio.h>
-void display();
-
-int main()
+Int main()
 {
-    display();
-    display();
-}
-void display()
+	for(int i=0;i<5;i++)
 {
-    static int c = 1;
-    c += 5;
-    printf("%d  ",c);
+Disp();
+Return 0;
 }
-Output
+Disp()
+{
+	Auto int num1;
+	Num1 = 0;
+	Static int num2 = 0;
+	Print(“%d %d\n”,num1,num2);
+	Num1++;
+	Num2++;
+}
 
-6 11
+Output:
+00
+01
+02
+03
+04
+  
+ 
+  
+  
+The extern Storage Class
+When you have multiple files and you define a global variable or function, which will also be used in other files, then extern will be used in another file to provide the reference of defined variable or function.
+
+Ex :
+
+#include<stdio.h>
+Int main()
+{
+Extern int num;
+Print(“%d\n”,num);
+Return;
+}
+
+File2
+Int num =10;
+
+Gcc file1.c file2.c
+
